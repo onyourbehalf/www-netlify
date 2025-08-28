@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy first personalized AI that works for you.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ✅ Hero Section -->
+  <section class="bg-white pt-24">
+    <div class="grid max-w-screen-xl px-4 py-16 mx-auto lg:gap-8 lg:grid-cols-12">
+      <div class="lg:col-span-7">
+        <h1 class="text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
+          Privacy first personalized AI that works for you.
+        </h1>
+        <p class="mt-6 text-lg text-gray-600">
+          AI tools that integrate seamlessly with your online and on-device activity. No more cut-and-paste and tab switching in the middle of everything that you do.
+        </p>
+  </section>
+
+  <!-- ✅ Footer with Contact Form (Netlify Forms) -->
+<footer id="contact" class="bg-gray-100 py-12">
+  <div class="max-w-screen-xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- Company Info -->
+      <div>
+        <h2 class="mb-4 text-2xl font-bold text-gray-900">Contact Us</h2>
+        <p class="mb-6 text-gray-600">
+          Have a question or want to work with us?
+        </p>
+        <p class="text-gray-500">Email: <a href="mailto:contactus@onyourbehalf.ai" class="text-blue-600 hover:underline">contactus@onyourbehalf.ai</a></p>
+      </div>
+
+      <!-- Contact Form -->
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6 bg-white p-6 rounded-xl shadow">
+        <!-- Netlify form hidden input -->
+        <input type="hidden" name="form-name" value="contact" />
+
+        <!-- Honeypot (hidden from humans, visible to bots) -->
+        <p class="hidden">
+          <label>Don’t fill this out if you’re human:
+            <input name="bot-field" />
+          </label>
+        </p>
+
+        <div>
+          <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Your Name</label>
+          <input type="text" id="name" name="name" required
+                 class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your Email</label>
+          <input type="email" id="email" name="email" required
+                 class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Message</label>
+          <textarea id="message" name="message" rows="4" required
+                    class="block w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
+        </div>
+        <button type="submit"
+                class="w-full px-5 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+          Send Message
+        </button>
+      </form>
+
+    </div>
+
+    <!-- Bottom Footer Note -->
+    <div class="mt-12 text-center text-gray-500">
+      © 2025 On Your Behalf Inc. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>

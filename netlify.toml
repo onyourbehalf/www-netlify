@@ -1,0 +1,12 @@
+# netlify.toml
+
+[build]
+  # For a simple static site with no build tools, the command is empty.
+  command = ""
+  
+  # The folder to publish to the live URL. "." means the root of the project.
+  publish = "./landing-page"
+
+[dev]
+  # This tells the Netlify CLI which folder to serve for local development.
+  publish = "./landing-page"
